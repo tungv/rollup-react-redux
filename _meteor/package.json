@@ -6,7 +6,8 @@
   },
   "dependencies": {
     "meteor-node-stubs": "~0.2.0",
-    "react": "^15.0.1"
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
   },
   "devDependencies": {
     "babel-plugin-react-transform": "^2.0.2",
