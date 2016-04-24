@@ -5,6 +5,13 @@
     "start": "meteor run"
   },
   "dependencies": {
-    "meteor-node-stubs": "~0.2.0"
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.0.1"
+  },
+  "devDependencies": {
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-meteor": "^6.6.7",
+    "react-hot-loader": "^3.0.0-alpha.12",
+    "redbox-react": "^1.2.3"
   }
 }
