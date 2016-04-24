@@ -5,9 +5,14 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "lodash": "^4.11.1",
     "meteor-node-stubs": "^0.2.3",
     "react": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "react-dom": "^15.0.1",
+    "react-redux": "^4.4.5",
+    "recompose": "^0.17.0",
+    "redux": "^3.5.2",
+    "redux-actions": "^0.9.1"
   },
   "devDependencies": {
     "babel-plugin-react-transform": "^2.0.2",
