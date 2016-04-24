@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "bundle_client": "rollup -c rollup/rollup.client.js",
-    "bundle_server": "rollup -c rollup/rollup.server.js",
-    "bundle": "npm run bundle_server && npm run bundle_client",
+    "build:client": "rollup -c rollup/rollup.client.js",
+    "build:server": "rollup -c rollup/rollup.server.js",
+    "build:watch": "watch 'npm run build' src/",
+    "build": "npm run build:server && npm run build:client",
     "start": "cd _meteor && meteor --port 3001"
   },
   "repository": {
