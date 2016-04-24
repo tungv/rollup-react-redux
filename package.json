@@ -1,0 +1,36 @@
+{
+  "name": "rollup-react-redux",
+  "version": "0.0.1",
+  "description": "React + Meteor + Redux + Rollup",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "bundle_client": "rollup -c rollup/rollup.client.js",
+    "bundle_server": "rollup -c rollup/rollup.server.js",
+    "bundle": "npm run bundle_server && npm run bundle_client",
+    "start": "cd _meteor && meteor --port 3001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tungv/rollup-react-redux.git"
+  },
+  "keywords": [
+    "react",
+    "meteor",
+    "redux",
+    "rollup"
+  ],
+  "author": "Tung Vu <me@tungv.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tungv/rollup-react-redux/issues"
+  },
+  "homepage": "https://github.com/tungv/rollup-react-redux#readme",
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "rollup-plugin-json": "^2.0.0"
+  },
+  "dependencies": {
+    "rollup": "^0.26.0"
+  }
+}
