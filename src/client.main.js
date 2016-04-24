@@ -6,5 +6,7 @@ export default () => console.log( message );
 import React from 'react';
 
 export const ReactRoot = () => (
-  <div>Hello</div>
+  <div>
+    <input type='text' style={{ fontSize: '12px' }}/>
+  </div>
 );

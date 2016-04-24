@@ -7,7 +7,7 @@
     "test": "mocha",
     "build:client": "rollup -c rollup/rollup.client.js",
     "build:server": "rollup -c rollup/rollup.server.js",
-    "build:watch": "watch 'npm run build' src/",
+    "build:watch": "./node_modules/.bin/watch 'npm run build' src/",
     "build": "npm run build:server && npm run build:client",
     "start": "cd _meteor && meteor --port 3001"
   },
@@ -28,9 +28,10 @@
   },
   "homepage": "https://github.com/tungv/rollup-react-redux#readme",
   "devDependencies": {
-    "babel-plugin-transform-react-jsx": "^6.7.5",
     "babel-preset-es2015-rollup": "^1.1.1",
-    "rollup-plugin-json": "^2.0.0"
+    "babel-preset-react": "^6.5.0",
+    "rollup-plugin-json": "^2.0.0",
+    "watch": "^0.17.1"
   },
   "dependencies": {
     "rollup": "^0.26.0"
