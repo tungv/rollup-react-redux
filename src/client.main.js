@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import { combineReducers, createStore } from 'redux';
 import { AppContainer } from 'react-hot-loader';
 
-import TodoRoot, { MODULE_NAME as TODOS_MODULE_NAME, reducer as TodoReducer } from './modules/todos/index';
+import TodoApp, { MODULE_NAME as TODOS_MODULE_NAME, reducer as TodoReducer } from './modules/todos';
 
 export const store = createStore(combineReducers({
   [TODOS_MODULE_NAME]: TodoReducer
@@ -13,4 +13,4 @@ export const store = createStore(combineReducers({
 const render = (component) =>
   ReactDOM.render(<AppContainer component={component} props={{ store }} />, document.getElementById('root'));
 
-export const initialize = () => render(TodoRoot);
+export const initialize = () => render(TodoApp);

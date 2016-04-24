@@ -1,6 +1,6 @@
 import { createAction, handleActions } from 'redux-actions';
-
-const ADD_TODO = `${ MODULE_NAME }/ADD_TODO`;
+import { name } from '../package.json';
+const ADD_TODO = `${ name }/ADD_TODO`;
 
 export type Todo = {
   text: string,
